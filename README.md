@@ -9,3 +9,9 @@ cd text2midi
 conda create -n text2midi python=3.10
 pip install -r requirements.txt
 ```
+## User Guide
+To train our model, we use accelerate library. Please check/fix the confiugration in config/config.yaml. To train the model from scratch:
+```bash
+cd model
+accelerate launch --multi_gpu --num_processes=4 train_accelerate.py --config ../config.yaml
+```
