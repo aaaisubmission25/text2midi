@@ -20,3 +20,16 @@ To generate after training is finished:
 cd model
 python transformer_model.py
 ```
+## Results on Complete MidiCaps Test Set
+After further analysis on the full test set, we found that Text2MIDI outperforms MuseCoco across **all** evaluated metrics. Below is a summary of these results:
+| Metric      | Text2MIDI | MidiCaps | MuseCoco |
+|-------------|-----------|----------|----------|
+| CR (↑)      | 2.156     | 3.4326   | 2.1214   |
+| CLAP (↑)    | 0.2204    | 0.2593   | 0.209    |
+| TB (%) (↑)  | 34.03     | -        | 33.89    |
+| TBT (%) (↑) | 66.9      | -        | 66.63    |
+| CK (%) (↑)  | 15.36     | -        | 15.23    |
+| CKD (%) (↑) | 15.80     | -        | 15.73    |
+
+
+
