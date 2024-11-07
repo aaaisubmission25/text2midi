@@ -15,3 +15,8 @@ To train our model, we use accelerate library. Please check/fix the confiugratio
 cd model
 accelerate launch --multi_gpu --num_processes=4 train_accelerate.py --config ../config.yaml
 ```
+To generate after training is finished: 
+```bash
+cd model
+python transformer_model.py
+```
